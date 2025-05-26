@@ -13,6 +13,8 @@ import { v4 as uuidv4 } from 'uuid';
 const resend = new Resend(process.env.RESEND_API_KEY!);
 const JWT_SECRET = process.env.JWT_SECRET!;
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 const corsOptions = {
@@ -25,6 +27,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('Server is up and running!');
+});  
 
 // Sign up route
 app.post("/v1/signup", async (req: Request, res: Response): Promise<any> => {
@@ -851,7 +857,7 @@ app.get("/v1/linkdetailsinvite/:username", async (req: Request, res: Response): 
 });
 
 // Listening route
-const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
