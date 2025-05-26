@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from 'react';
 import { MuiOtpInput } from 'mui-one-time-password-input';
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function SignUp() {
     const navigate = useNavigate();

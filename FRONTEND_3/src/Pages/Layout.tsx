@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import bgimage from "../assets/bgimage.png";
 import Navbar from "../navbar";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 const SharedDataContext = createContext(null);
 export const useSharedData = () => useContext(SharedDataContext);

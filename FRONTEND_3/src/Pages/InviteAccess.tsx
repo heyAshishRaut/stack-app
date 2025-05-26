@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import star from "../assets/star.svg";
 import bgimage from "../assets/bgimage.png";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function InviteAccess() {
     const { token } = useParams();

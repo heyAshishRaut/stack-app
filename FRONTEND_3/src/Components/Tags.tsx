@@ -7,7 +7,7 @@ import FacebookEmbed from "../Pages/FacebookEmbed";
 import SpotifyEmbed from "../Pages/SpotifyEmbed";
 import LinkedInEmbed from "../Pages/LinkedInEmbed";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function Tags() {
     // @ts-ignore

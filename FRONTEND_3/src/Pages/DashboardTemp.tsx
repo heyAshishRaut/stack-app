@@ -10,7 +10,7 @@ import FacebookEmbed from "./FacebookEmbed";
 import SpotifyEmbed from "./SpotifyEmbed";
 import LinkedInEmbed from "./LinkedInEmbed";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function Dashboard() {
     // @ts-ignore

@@ -3,7 +3,7 @@ import { useSharedData } from "../Pages/Layout";
 import { AnimatePresence, motion } from "framer-motion";
 import SpotifyEmbed from "../Pages/SpotifyEmbed";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function Songs() {
     // @ts-ignore

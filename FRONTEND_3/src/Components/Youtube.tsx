@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSharedData } from "../Pages/Layout";
 import { AnimatePresence, motion } from "framer-motion";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function Youtube() {
     // @ts-ignore

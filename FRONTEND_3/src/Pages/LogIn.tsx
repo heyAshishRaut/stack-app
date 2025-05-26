@@ -5,7 +5,7 @@ import bgimage from "../assets/bgimage.png";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://stack-app-e0fe.onrender.com";
 
 function Login() {
     const navigate = useNavigate();
