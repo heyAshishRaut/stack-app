@@ -17,9 +17,20 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+const allowedOrigins = [
+    "https://stack-app-kappa.vercel.app",
+    "https://www.stackforweb.space"
+];
+
 app.use(cors({
-    origin: "https://stack-app-kappa.vercel.app",
-    credentials: true
+    origin: function (origin, callback) {
+        if (!origin) return callback(null, true); // allow non-browser requests like Postman
+        if (allowedOrigins.indexOf(origin) === -1) {
+            return callback(new Error("Not allowed by CORS"), false);
+        }
+        return callback(null, true);
+    },
+    credentials: true,
 }));
 
 app.use(express.json());
